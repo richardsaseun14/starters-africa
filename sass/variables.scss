@@ -1,0 +1,54 @@
+// yellow= #F8AD00
+// green= #30B24D
+// blue = #187FC2
+// red = #CC312B
+// grey = #111111
+// grey/50 = #6C6C6C
+
+// Custom Bootstrap variable overrides go first
+// $grid-breakpoints: (xs: 0,
+//   sm: 480px,
+//   md: 640px,
+//   lg: 992px,
+//   xl: 1300px);
+
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25
+    ),
+    2: (
+      $spacer * 0.5
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 1.5
+    ),
+    5: (
+      $spacer * 3
+    ),
+    6: (
+      $spacer * 5
+    ),
+    7: (
+      $spacer * 7
+    ),
+    8: (
+      $spacer * 8
+    ),
+    9: (
+      $spacer * 9
+    ),
+    10: (
+      $spacer * 10
+    )
+  ),
+  $spacers
+);
+
+$enable-rounded: false;
+$blue: #f8ad00;

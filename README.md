@@ -1,6 +1,6 @@
 # starters-africa-nuxt
 
-> My delightful Nuxt.js project
+> Starters Africa Website using Nuxt and WP-rest API
 
 ## Build Setup
 

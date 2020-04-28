@@ -23,7 +23,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/sass/app.scss'],
+  css: ['@/sass/app.scss', 'swiper/css/swiper.css'],
   /*
    ** Plugins to load before mounting the App
    */

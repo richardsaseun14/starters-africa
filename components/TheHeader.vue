@@ -23,7 +23,7 @@
     </b-navbar>
 
     <!-- Main navigation -->
-    <b-navbar class="bg-transparent" toggleable="lg" type="light">
+    <b-navbar class="" toggleable="lg" type="light">
       <b-navbar-brand href="#">
         <b-img
           height="30"

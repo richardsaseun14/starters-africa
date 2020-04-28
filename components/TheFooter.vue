@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-dark py-5">
+  <div class="bg-darker py-5">
     <div class="container">
       <!-- Main Footer -->
       <div class="d-flex row text-white">
@@ -24,7 +24,9 @@
         </div>
         <div class="mx-3 my-3 my-lg-0">
           <b-nav vertical>
-            <b-nav-text class="pl-3">STARTERS AFRICA</b-nav-text>
+            <b-nav-text class="font-weight-bold pl-3 mb-3"
+              >STARTERS AFRICA</b-nav-text
+            >
             <b-nav-item>Starters Kids</b-nav-item>
             <b-nav-item>Starters Academy</b-nav-item>
             <b-nav-item>Starters for Business</b-nav-item>
@@ -32,7 +34,7 @@
         </div>
         <div class="mx-3 my-3 my-lg-0">
           <b-nav vertical>
-            <b-nav-text class="pl-3">COMPANY</b-nav-text>
+            <b-nav-text class="font-weight-bold pl-3 mb-3">COMPANY</b-nav-text>
             <b-nav-item>About Us</b-nav-item>
             <b-nav-item>Blog</b-nav-item>
             <b-nav-item>Contact</b-nav-item>
@@ -41,7 +43,7 @@
         </div>
         <div class="mx-3 my-3 my-lg-0">
           <b-nav vertical>
-            <b-nav-text class="pl-3">LINKS</b-nav-text>
+            <b-nav-text class="font-weight-bold pl-3 mb-3">LINKS</b-nav-text>
             <b-nav-item>Gallery</b-nav-item>
             <b-nav-item>Courses</b-nav-item>
             <b-nav-item>Events</b-nav-item>
@@ -55,14 +57,14 @@
 
       <!-- Copyright Footer -->
       <div class="row">
-        <div class="col-6">
-          <p class="text-white">
+        <div class="col-md-6">
+          <p class="text-white text-center text-md-left">
             Copyright 2020 <b-link to="/">Starters Africa</b-link> || Dare to
             Start
           </p>
         </div>
-        <div class="col-6">
-          <b-nav align="right">
+        <div class="col-md-6">
+          <b-nav small class="justify-content-md-end justify-content-center">
             <b-nav-item link-classes="py-0"
               >Privacy Policy and Cookie Policy</b-nav-item
             >

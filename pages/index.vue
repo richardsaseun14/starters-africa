@@ -1,17 +1,17 @@
 <template>
   <div>
-    <section></section>
+    <home-slider></home-slider>
   </div>
 </template>
 
 <script>
-  import Logo from '~/components/Logo.vue'
+import HomeSlider from '~/components/HomeSlider.vue'
 
-  export default {
-    components: {
-      Logo
-    }
+export default {
+  components: {
+    HomeSlider
   }
+}
 </script>
 
 <style></style>

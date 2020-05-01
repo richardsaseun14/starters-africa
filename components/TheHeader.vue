@@ -71,7 +71,7 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-.nuxt-link-active {
+.nuxt-link-exact-active {
   &::before {
     content: '';
     position: absolute;

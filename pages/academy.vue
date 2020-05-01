@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="hero">
+    <section class="hero d-flex align-items-center">
       <div class="container">
         <div class="row">
           <div class="col-12 text-white">
@@ -24,35 +24,65 @@
       <div class="color bg-red"></div>
     </div>
 
-    <!-- Events Section  -->
+    <!-- Categories Section -->
+    <section class="pt-7">
+      <div class="container">
+        <div class="mb-5">
+          <h1>Categories</h1>
+        </div>
+        <div class="row">
+          <div
+            v-for="(cat, index) in categories"
+            class="col-lg-3 mb-4"
+            :key="index"
+          >
+            <div class="bg-darker-25 py-4 pl-3">
+              <p class="mb-0 font-weight-bold text-capitalize">{{ cat }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses section -->
     <section class="py-7">
       <div class="container">
+        <div class="">
+          <h1 class="">
+            We found <span class="text-yellow">3</span> courses available for
+            you
+          </h1>
+        </div>
+
         <div class="row">
           <div class="col-12 mb-5">
             <b-card no-body class="">
               <b-row no-gutters>
-                <b-col md="3" class="my-auto">
+                <b-col md="4" class="my-auto">
                   <b-card-img
-                    src="~/assets/img/event-image.png"
+                    src="~/assets/img/course-image.png"
                     alt="Image"
                     fluid
                   ></b-card-img>
                 </b-col>
-                <b-col md="9" class="my-auto">
+                <b-col md="8" class="my-auto">
                   <b-card-body class="">
                     <b-card-title class="font-weight-bold mb-0" title-tag="h2"
-                      >How to get funding for your business: For SMEs and
-                      StartUp founders
-                    </b-card-title>
+                      >Zero to Hero: Frontend Mastery</b-card-title
+                    >
+                    <b-card-sub-title
+                      sub-title-tag="small"
+                      class="text-uppercase"
+                      >development</b-card-sub-title
+                    >
                     <b-card-text class="mt-4">
-                      <icon class="text-yellow" name="regular/clock"></icon>
-                      <em>6th June, 2020</em> &nbsp &nbsp
-                      <icon class="text-yellow" name="map-marker-alt"></icon>
-                      <em>Lagos, Nigeria.</em>
+                      Building a new generation of kids/young adults equipped
+                      with digital skills to create, innovate and thrive for the
+                      future of work and the growing digital economy in Africa.
                     </b-card-text>
-                    <b-button size="sm" class="px-4" variant="outline-yellow"
-                      >Register
-                    </b-button>
+                    <b-button variant="yellow" class="text-white"
+                      >see full course</b-button
+                    >
                   </b-card-body>
                 </b-col>
               </b-row>
@@ -61,27 +91,64 @@
           <div class="col-12 mb-5">
             <b-card no-body class="">
               <b-row no-gutters>
-                <b-col md="3" class="my-auto">
+                <b-col md="4" class="my-auto">
                   <b-card-img
-                    src="~/assets/img/event-image.png"
+                    src="~/assets/img/course-image.png"
                     alt="Image"
                     fluid
                   ></b-card-img>
                 </b-col>
-                <b-col md="9" class="my-auto">
+                <b-col md="8" class="my-auto">
                   <b-card-body class="">
                     <b-card-title class="font-weight-bold mb-0" title-tag="h2"
-                      >Effective Communication for Increased sales
-                    </b-card-title>
+                      >Zero to Hero: Frontend Mastery</b-card-title
+                    >
+                    <b-card-sub-title
+                      sub-title-tag="small"
+                      class="text-uppercase"
+                      >development</b-card-sub-title
+                    >
                     <b-card-text class="mt-4">
-                      <icon class="text-yellow" name="regular/clock"></icon>
-                      <em>19th June, 2020</em> &nbsp &nbsp
-                      <icon class="text-yellow" name="map-marker-alt"></icon>
-                      <em>Lagos Nigeria. </em>
+                      Building a new generation of kids/young adults equipped
+                      with digital skills to create, innovate and thrive for the
+                      future of work and the growing digital economy in Africa.
                     </b-card-text>
-                    <b-button size="sm" class="px-4" variant="outline-yellow"
-                      >Register
-                    </b-button>
+                    <b-button variant="yellow" class="text-white"
+                      >see full course</b-button
+                    >
+                  </b-card-body>
+                </b-col>
+              </b-row>
+            </b-card>
+          </div>
+          <div class="col-12 mb-5">
+            <b-card no-body class="">
+              <b-row no-gutters>
+                <b-col md="4" class="my-auto">
+                  <b-card-img
+                    src="~/assets/img/course-image.png"
+                    alt="Image"
+                    fluid
+                  ></b-card-img>
+                </b-col>
+                <b-col md="8" class="my-auto">
+                  <b-card-body class="">
+                    <b-card-title class="font-weight-bold mb-0" title-tag="h2"
+                      >Zero to Hero: Frontend Mastery</b-card-title
+                    >
+                    <b-card-sub-title
+                      sub-title-tag="small"
+                      class="text-uppercase"
+                      >development</b-card-sub-title
+                    >
+                    <b-card-text class="mt-4">
+                      Building a new generation of kids/young adults equipped
+                      with digital skills to create, innovate and thrive for the
+                      future of work and the growing digital economy in Africa.
+                    </b-card-text>
+                    <b-button variant="yellow" class="text-white"
+                      >see full course</b-button
+                    >
                   </b-card-body>
                 </b-col>
               </b-row>
@@ -94,7 +161,21 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      categories: [
+        'development',
+        'Data Science',
+        'Design',
+        'Marketing',
+        'Finance & Accounting',
+        'Photography',
+        'Lifestyle'
+      ]
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

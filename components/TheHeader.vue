@@ -39,15 +39,27 @@
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-item active to="/" class="ml-4 font-weight-bold">
+          <b-nav-item class="ml-4 font-weight-bold" to="/">
             HOME
           </b-nav-item>
-          <b-nav-item class="ml-4 font-weight-bold">ACADEMY</b-nav-item>
-          <b-nav-item class="ml-4 font-weight-bold">KIDS</b-nav-item>
-          <b-nav-item class="ml-4 font-weight-bold">FOR BUSINESS</b-nav-item>
-          <b-nav-item class="ml-4 font-weight-bold">EVENTS</b-nav-item>
-          <b-nav-item class="ml-4 font-weight-bold">BLOG</b-nav-item>
-          <b-nav-item class="ml-4 font-weight-bold">CONTACT</b-nav-item>
+          <b-nav-item class="ml-4 font-weight-bold" to="/academy">
+            ACADEMY
+          </b-nav-item>
+          <b-nav-item class="ml-4 font-weight-bold" to="/kids">
+            KIDS
+          </b-nav-item>
+          <b-nav-item class="ml-4 font-weight-bold" to="/business">
+            FOR BUSINESS
+          </b-nav-item>
+          <b-nav-item class="ml-4 font-weight-bold" to="/events">
+            EVENTS
+          </b-nav-item>
+          <b-nav-item class="ml-4 font-weight-bold" to="/blog">
+            BLOG
+          </b-nav-item>
+          <b-nav-item class="ml-4 font-weight-bold" to="/contact">
+            CONTACT
+          </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

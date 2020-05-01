@@ -80,7 +80,8 @@ export default {
       'FormCheckboxPlugin',
       'FormInputPlugin',
       'FormGroupPlugin',
-      'LinkPlugin'
+      'LinkPlugin',
+      'CardPlugin'
     ],
     directivePlugins: [
       'VBPopoverPlugin',

@@ -10,10 +10,31 @@ http://www.richardsaseun.com
 ***************************************
 ***************************************/
 
+// html {
+//   font-size: 1rem;
+// }
+
+// @include media-breakpoint-up(sm) {
+//   html {
+//     font-size: 1.2rem;
+//   }
+// }
+
+// @include media-breakpoint-up(md) {
+//   html {
+//     font-size: 1.4rem;
+//   }
+// }
+
+// @include media-breakpoint-up(lg) {
+//   html {
+//     font-size: 1.6rem;
+//   }
+// }
+
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&family=Karla:wght@400;700&display=swap');
 
 h1,
-h2,
 h3,
 h4,
 h5,

@@ -6,6 +6,8 @@ import 'vue-awesome/icons/brands/instagram'
 import 'vue-awesome/icons/brands/twitter'
 import 'vue-awesome/icons/phone-alt'
 import 'vue-awesome/icons/envelope'
+import 'vue-awesome/icons/map-marker-alt'
+import 'vue-awesome/icons/regular/clock'
 // require('vue-awesome/icons')
 
 Vue.component('icon', Icon)

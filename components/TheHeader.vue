@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <!-- Social media navbar -->
     <b-navbar class="py-0" type="dark" variant="warning">
       <!-- Right aligned nav items -->
@@ -51,7 +51,7 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-  </div>
+  </section>
 </template>
 
 <script>

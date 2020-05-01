@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-darker py-5">
+  <section class="bg-darker py-5">
     <div class="container">
       <!-- Main Footer -->
       <div class="d-flex row text-white">
@@ -73,7 +73,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

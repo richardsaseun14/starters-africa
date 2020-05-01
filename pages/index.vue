@@ -177,7 +177,7 @@
                     </b-card-title>
                     <b-card-text class="mt-4">
                       <icon class="text-yellow" name="regular/clock"></icon>
-                      <em>6th June, 2020</em> &nbsp &nbsp
+                      <em>6th June, 2020</em> &nbsp; &nbsp;
                       <icon class="text-yellow" name="map-marker-alt"></icon>
                       <em>Lagos, Nigeria.</em>
                     </b-card-text>
@@ -206,7 +206,7 @@
                     </b-card-title>
                     <b-card-text class="mt-4">
                       <icon class="text-yellow" name="regular/clock"></icon>
-                      <em>19th June, 2020</em> &nbsp &nbsp
+                      <em>19th June, 2020</em> &nbsp; &nbsp;
                       <icon class="text-yellow" name="map-marker-alt"></icon>
                       <em>Lagos Nigeria. </em>
                     </b-card-text>

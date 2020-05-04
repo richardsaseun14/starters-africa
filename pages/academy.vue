@@ -48,10 +48,10 @@
     <section class="py-7">
       <div class="container">
         <div class="">
-          <h1 class="">
+          <h3 class="mb-3">
             We found <span class="text-yellow">3</span> courses available for
             you
-          </h1>
+          </h3>
         </div>
 
         <div class="row">

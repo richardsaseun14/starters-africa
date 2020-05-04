@@ -86,8 +86,9 @@ export default {
 
 .swiper-wrapper {
   height: 80vh;
-  background: black;
+
   .swiper-slide {
+    background: black;
     background-position: center;
     background-size: cover;
 

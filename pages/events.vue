@@ -100,12 +100,4 @@ export default {}
   background-size: cover;
   background-image: url('../assets/img/event-hero.png');
 }
-
-.color-row {
-  height: 8px;
-  .color {
-    width: 150px;
-    height: 100%;
-  }
-}
 </style>

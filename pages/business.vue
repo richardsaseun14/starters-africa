@@ -3,7 +3,7 @@
     <section>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6 py-7 pl-md-5">
+          <div class="col-md-6 py-7 py-md-10 pl-md-5">
             <h1 class="">
               <span class="text-yellow">Upskill</span> your people with virtual
               training

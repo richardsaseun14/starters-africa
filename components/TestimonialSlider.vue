@@ -5,10 +5,8 @@
         <div class="swiper-slide slide-1 d-flex flex-column text-center">
           <div class="px-3 px-lg-10">
             <h2 class="mb-5">
-              The Starters Kids programme has had a huge effect on the children
-              in our school, the reviews from parents have been great and we are
-              very happy with the digital transformation being experienced by
-              our students.
+              The Starters Kids programme has had a huge effect on the children in our school, the reviews from parents
+              have been great and we are very happy with the digital transformation being experienced by our students.
             </h2>
             <p class="mb-0">Mr. Uche Onyekpe</p>
             <small>Proprietor St. Nobert Schools</small>
@@ -17,9 +15,8 @@
         <div class="swiper-slide slide-2 d-flex flex-column text-center">
           <div class="px-3 px-lg-10">
             <h2 class="mb-5">
-              I am more than glad I took the STarters for Business Sales &
-              Strategy course, not only is my business now online but we have
-              also increased sales by 80%. Thank you Starters Africa.
+              I am more than glad I took the Starters for Business Sales & Strategy course, not only is my business now
+              online but we have also increased sales by 80%. Thank you Starters Africa.
             </h2>
             <p class="mb-0">Mrs. Agatha Peter-Ngwu</p>
             <small>CEO Agathus Cakery & Events</small>
@@ -28,9 +25,8 @@
         <div class="swiper-slide slide-3 d-flex flex-column text-center">
           <div class="px-3 px-lg-10">
             <h2 class="mb-5">
-              Thanks to the Starters Academy courses I’ve not only increased my
-              knowledge on digital marketing but have been able to secure a job
-              in a digital agency after two years of being unemployed.
+              Thanks to the Starters Academy courses I’ve not only increased my knowledge on digital marketing but have
+              been able to secure a job in a digital agency after two years of being unemployed.
             </h2>
             <p class="mb-0">Ms. Damilola</p>
             <small>Intern at Yogi Creatives</small>
@@ -39,21 +35,23 @@
         <div class="swiper-slide slide-4 d-flex flex-column text-center">
           <div class="px-3 px-lg-10">
             <h2 class="mb-5">
-              This is the only platform where your tutors are very much
-              interested in your personal growth and development as well as your
-              skills improvement.
+              This is the only platform where your tutors are very much interested in your personal growth and
+              development as well as your skills improvement.
             </h2>
             <p class="mb-0">Maureen Omoze</p>
             <small>Digital Native in Training</small>
           </div>
         </div>
       </div>
-      <!-- <div class="swiper-button-prev" slot="button-prev"></div>
-    <div class="swiper-button-next" slot="button-next"></div> -->
-      <div
-        class="swiper-pagination swiper-pagination-bullets"
-        slot="pagination"
-      ></div>
+      <!-- Navigation -->
+      <div class="d-none d-lg-block swiper-button-prev" slot="button-prev">
+        <icon scale="1.5" class="nav-icons" name="arrow-left"></icon>
+      </div>
+      <div class="d-none d-lg-block swiper-button-next" slot="button-next">
+        <icon scale="1.5" class="nav-icons" name="arrow-right"></icon>
+      </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination swiper-pagination-bullets" slot="pagination"></div>
     </div>
   </section>
 </template>
@@ -91,7 +89,40 @@ export default {
 </script>
 
 <style lang="scss">
+.nav-icons {
+  right: 36%;
+  position: absolute;
+  top: 34%;
+  color: white;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  z-index: 1000;
+  background-color: #00000036;
+  // top: 40px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  // padding-top: 11px;
+  opacity: 1;
+  // color: #000000;
+  // text-align: center;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+  }
+}
+
 .swiper {
+  &:hover {
+    .swiper-button-prev,
+    .swiper-button-next {
+    }
+  }
   .swiper-pagination {
     padding-bottom: 30px;
     .swiper-pagination-bullet {

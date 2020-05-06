@@ -81,7 +81,8 @@ export default {
       'FormInputPlugin',
       'FormGroupPlugin',
       'LinkPlugin',
-      'CardPlugin'
+      'CardPlugin',
+      'TooltipPlugin'
     ],
     directivePlugins: [
       'VBPopoverPlugin',

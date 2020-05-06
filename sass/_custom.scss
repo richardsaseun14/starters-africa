@@ -94,3 +94,11 @@ a:hover {
   background-position: center center;
   background-size: cover;
 }
+
+.color-row {
+  height: 8px;
+  .color {
+    width: 150px;
+    height: 100%;
+  }
+}

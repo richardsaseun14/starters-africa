@@ -142,7 +142,7 @@ export default {
     background-size: cover;
 
     &.slide-1 {
-      background-image: url('../assets/img/slide-1.png');
+      background-image: url('../assets/img/slide-1.jpg');
     }
     &.slide-2 {
       background-image: url('../assets/img/slide-2.png');

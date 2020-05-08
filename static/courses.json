@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Mastery: Zero to Hero",
+    "price": "free",
+    "brief_desc": "Become a Pro in front-end web development skills",
+    "instructor": "Richard Saseun",
+    "category": "development",
+    "ratings": 4.5,
+    "durations": "16 weeks",
+    "overview_desc": "This course is for anyone who wants to become a pro in front end web development skills In this course, we will talk about the latest front end web development skills. By covering this course you will be able to create wonderful front end websites of your own. This course covers all the content that is required for the front end web development. It includes HTML5, CSS3, Bootstrap 4.3 and Javascript. By the end of this course, you will have impressed yourself with almost 20 projects under your belt and will be able to hit the ground running with your newly acquired skill to build amazing front end interfaces.",
+    "requirements": ["No previous development experience required.", "Access to various open-source (free) software."],
+    "learn": [
+      "Build a simple HTML text site",
+      "Create beautiful websites using html, css and bootstrap",
+      "Get the ball rolling for a career in Web Design"
+    ],
+    "overview": {
+      "desc": "This course is for anyone who wants to become a pro in front end web development skills In this course, we will talk about the latest front end web development skills. By covering this course you will be able to create wonderful front end websites of your own. This course covers all the content that is required for the front end web development. It includes HTML5, CSS3, Bootstrap 4.3 and Javascript. By the end of this course, you will have impressed yourself with almost 20 projects under your belt and will be able to hit the ground running with your newly acquired skill to build amazing front end interfaces."
+    },
+    "curri": {
+      "html": [
+        "Introduction",
+        "Element And Attribute",
+        "Text Editor & Formatting",
+        "Style And Paragraph",
+        "Formatting And Quotes",
+        "Comments And Colors"
+      ],
+      "css": ["Intro & Syntax", "Selector & Ways To Use", "Border & Margins & Padding"],
+      "javascript": ["Intro & Syntax", "Outputs", "Statements"]
+    },
+    "testimonial": {}
+  }
+]

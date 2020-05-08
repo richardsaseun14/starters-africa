@@ -6,10 +6,9 @@
           <div class="col-12 text-white">
             <h1 class="">Starters Academy</h1>
             <p class="">
-              We are creating an ecosystem of technologists, skillful creatives,
-              software developers, enterprise architects, project managers, etc.
-              creating solutions that positively impact our world and drive
-              growth in the growing digital economy in Africa.
+              We are creating an ecosystem of technologists, skillful creatives, software developers, enterprise
+              architects, project managers, etc. creating solutions that positively impact our world and drive growth in
+              the growing digital economy in Africa.
             </p>
           </div>
         </div>
@@ -31,11 +30,7 @@
           <h1>Categories</h1>
         </div>
         <div class="row">
-          <div
-            v-for="(cat, index) in categories"
-            class="col-lg-3 mb-4"
-            :key="index"
-          >
+          <div v-for="(cat, index) in categories" class="col-lg-3 mb-4" :key="index">
             <div class="bg-darker-25 py-4 pl-3">
               <p class="mb-0 font-weight-bold text-capitalize">{{ cat }}</p>
             </div>
@@ -49,110 +44,13 @@
       <div class="container">
         <div class="">
           <h3 class="mb-3">
-            We found <span class="text-yellow">3</span> courses available for
-            you
+            We found <span class="text-yellow">{{ courses.length }}</span> courses available for you
           </h3>
         </div>
 
         <div class="row">
-          <div class="col-12 mb-5">
-            <b-card no-body class="">
-              <b-row no-gutters>
-                <b-col md="4" class="my-auto">
-                  <b-card-img
-                    src="~/assets/img/course-image.png"
-                    alt="Image"
-                    fluid
-                  ></b-card-img>
-                </b-col>
-                <b-col md="8" class="my-auto">
-                  <b-card-body class="">
-                    <b-card-title class="font-weight-bold mb-0" title-tag="h2"
-                      >Zero to Hero: Frontend Mastery</b-card-title
-                    >
-                    <b-card-sub-title
-                      sub-title-tag="small"
-                      class="text-uppercase"
-                      >development</b-card-sub-title
-                    >
-                    <b-card-text class="mt-4">
-                      Building a new generation of kids/young adults equipped
-                      with digital skills to create, innovate and thrive for the
-                      future of work and the growing digital economy in Africa.
-                    </b-card-text>
-                    <b-button variant="yellow" class="text-white"
-                      >see full course</b-button
-                    >
-                  </b-card-body>
-                </b-col>
-              </b-row>
-            </b-card>
-          </div>
-          <div class="col-12 mb-5">
-            <b-card no-body class="">
-              <b-row no-gutters>
-                <b-col md="4" class="my-auto">
-                  <b-card-img
-                    src="~/assets/img/course-image.png"
-                    alt="Image"
-                    fluid
-                  ></b-card-img>
-                </b-col>
-                <b-col md="8" class="my-auto">
-                  <b-card-body class="">
-                    <b-card-title class="font-weight-bold mb-0" title-tag="h2"
-                      >Zero to Hero: Frontend Mastery</b-card-title
-                    >
-                    <b-card-sub-title
-                      sub-title-tag="small"
-                      class="text-uppercase"
-                      >development</b-card-sub-title
-                    >
-                    <b-card-text class="mt-4">
-                      Building a new generation of kids/young adults equipped
-                      with digital skills to create, innovate and thrive for the
-                      future of work and the growing digital economy in Africa.
-                    </b-card-text>
-                    <b-button variant="yellow" class="text-white"
-                      >see full course</b-button
-                    >
-                  </b-card-body>
-                </b-col>
-              </b-row>
-            </b-card>
-          </div>
-          <div class="col-12 mb-5">
-            <b-card no-body class="">
-              <b-row no-gutters>
-                <b-col md="4" class="my-auto">
-                  <b-card-img
-                    src="~/assets/img/course-image.png"
-                    alt="Image"
-                    fluid
-                  ></b-card-img>
-                </b-col>
-                <b-col md="8" class="my-auto">
-                  <b-card-body class="">
-                    <b-card-title class="font-weight-bold mb-0" title-tag="h2"
-                      >Zero to Hero: Frontend Mastery</b-card-title
-                    >
-                    <b-card-sub-title
-                      sub-title-tag="small"
-                      class="text-uppercase"
-                      >development</b-card-sub-title
-                    >
-                    <b-card-text class="mt-4">
-                      Building a new generation of kids/young adults equipped
-                      with digital skills to create, innovate and thrive for the
-                      future of work and the growing digital economy in Africa.
-                    </b-card-text>
-                    <b-button variant="yellow" class="text-white"
-                      >see full course</b-button
-                    >
-                  </b-card-body>
-                </b-col>
-              </b-row>
-            </b-card>
+          <div v-for="course in courses" class="col-12 mb-5" :key="course.id">
+            <course-card class="mb-4" :course="course"></course-card>
           </div>
         </div>
       </div>
@@ -161,7 +59,13 @@
 </template>
 
 <script>
+import CourseCard from '~/components/CourseCard.vue'
+import { mapState } from 'vuex'
 export default {
+  async asyncData({ app }) {
+    await app.store.dispatch('getCourses')
+  },
+
   data() {
     return {
       categories: [
@@ -174,6 +78,14 @@ export default {
         'Lifestyle'
       ]
     }
+  },
+
+  computed: {
+    ...mapState(['courses'])
+  },
+
+  components: {
+    CourseCard
   }
 }
 </script>

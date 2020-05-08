@@ -29,6 +29,7 @@ export default {
    */
   plugins: [
     { src: '@/plugins/nuxt-swiper.plugin', mode: 'client' },
+    { src: '@/plugins/localStorage.js', ssr: false },
     {
       src: '@/plugins/iconify.js'
     }
@@ -53,7 +54,7 @@ export default {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: { baseURL: 'http://wp.starters.africa/wp-json/wp/v2', https: true },
   /*
    ** Build configuration
    */
@@ -82,13 +83,12 @@ export default {
       'FormGroupPlugin',
       'LinkPlugin',
       'CardPlugin',
-      'TooltipPlugin'
+      'TooltipPlugin',
+      'FormRatingPlugin',
+      'ListGroupPlugin',
+      'AvatarPlugin'
     ],
-    directivePlugins: [
-      'VBPopoverPlugin',
-      'VBTooltipPlugin',
-      'VBScrollspyPlugin'
-    ],
+    directivePlugins: ['VBPopoverPlugin', 'VBTooltipPlugin', 'VBScrollspyPlugin'],
     bootstrapCSS: false, // Or `css: false`
     bootstrapVueCSS: false // Or `bvCSS: false`
   }

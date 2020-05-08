@@ -1,7 +1,7 @@
 <template>
   <section>
     <!-- Social media navbar -->
-    <b-navbar class="py-0" type="dark" variant="warning">
+    <b-navbar class="py-0 bg-yellow" type="dark">
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
         <b-nav-item target="_blank" href="tel:+2348180452762" class="pl-3 text-white">
@@ -15,7 +15,7 @@
     </b-navbar>
 
     <!-- Main navigation -->
-    <b-navbar class="" toggleable="lg" type="light">
+    <b-navbar class="border-bottom" toggleable="lg" type="light">
       <b-navbar-brand to="/">
         <b-img height="30" src="~/assets/img/logo.png" alt="Starters Africa Logo"></b-img>
       </b-navbar-brand>

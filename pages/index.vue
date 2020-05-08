@@ -75,25 +75,8 @@
 
         <div class="row">
           <div class="col-12 mb-5">
-            <b-card no-body class="">
-              <b-row no-gutters>
-                <b-col md="3" class="my-auto">
-                  <b-card-img src="~/assets/img/course-image.png" alt="Image"></b-card-img>
-                </b-col>
-                <b-col md="9" class="my-auto">
-                  <b-card-body class="">
-                    <b-card-sub-title sub-title-tag="small" class="text-uppercase">development</b-card-sub-title>
-                    <b-card-title class="font-weight-bold mb-0" title-tag="h2"
-                      >Zero to Hero: Frontend Mastery</b-card-title
-                    >
-                    <b-card-text class="mt-4 mt-lg-2 pr-lg-4">
-                      This course is for anyone who wants to become a pro in front end web development skills
-                    </b-card-text>
-                    <b-button variant="yellow" class="text-white">see full course</b-button>
-                  </b-card-body>
-                </b-col>
-              </b-row>
-            </b-card>
+            <!-- Course card -->
+            <course-card class="mb-4" v-for="course in courses" :course="course" :key="course.id"></course-card>
           </div>
         </div>
       </div>
@@ -171,12 +154,23 @@
 import HomeSlider from '~/components/HomeSlider.vue'
 import TestimonialSlider from '~/components/TestimonialSlider.vue'
 import CompanySlider from '~/components/CompanySlider.vue'
+import CourseCard from '~/components/CourseCard.vue'
+import { mapState } from 'vuex'
 
 export default {
+  async asyncData({ app }) {
+    await app.store.dispatch('getCourses')
+  },
+
+  computed: {
+    ...mapState(['courses'])
+  },
+
   components: {
     HomeSlider,
     TestimonialSlider,
-    CompanySlider
+    CompanySlider,
+    CourseCard
   }
 }
 </script>

@@ -107,11 +107,11 @@ export default {
 }
 
 .swiper {
-  &:hover {
-    .swiper-button-prev,
-    .swiper-button-next {
-    }
-  }
+  // &:hover {
+  //   .swiper-button-prev,
+  //   .swiper-button-next {
+  //   }
+  // }
   .swiper-pagination {
     padding-bottom: 30px;
     .swiper-pagination-bullet {

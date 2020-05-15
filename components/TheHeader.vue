@@ -7,7 +7,7 @@
         <b-nav-item target="_blank" href="tel:+2348180452762" class="pl-3 text-white">
           <icon class="text-white" name="phone-alt"></icon> <span class="text-white">+234 818 045 2762</span>
         </b-nav-item>
-        <b-nav-item :to="social.link" v-for="social in socials" class="pl-3" :key="social.name">
+        <b-nav-item :href="social.link" v-for="social in socials" class="pl-3" :key="social.name">
           <icon :id="social.id" class="text-white" :name="social.name"></icon>
           <b-tooltip :target="social.id">{{ social.tip }}</b-tooltip>
         </b-nav-item>

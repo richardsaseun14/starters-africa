@@ -16,12 +16,12 @@
             <p class="">{{ course.brief_desc }}</p>
           </div>
           <div class="col-md-3">
-            <div class="bg-darker p-4">
+            <div class="bg-primary p-4">
               <h3 class="text-white text-center text-uppercase">
                 {{ course.price == 0 ? 'free' : '&#8358;' + course.price }}
               </h3>
             </div>
-            <b-button size="lg" block class="text-white" variant="primary">register</b-button>
+            <b-button size="lg" block class="text-white" variant="darker">register</b-button>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@
             <b-avatar size="2.5rem" variant="primary" src="https://placekitten.com/300/300" class="mr-2"></b-avatar>
             <div class="mt-n1">
               <small class="text-muted text-capitalize">instructor</small>
-              <p class="mb-0 mt-n1 text-uppercase">{{ course.instructor }}</p>
+              <p class="mb-0 mt-n1 text-uppercase">{{ course.instructor[0].post_title }}</p>
             </div>
           </div>
           <!-- category -->

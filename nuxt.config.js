@@ -32,12 +32,16 @@ export default {
     { src: '@/plugins/localStorage.js', ssr: false },
     {
       src: '@/plugins/iconify.js'
-    }
+    },
+    { src: '@/plugins/chatbot.plugin', mode: 'client' }
   ],
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  buildModules: ['@nuxtjs/google-analytics'],
+  // googleAnalytics: {
+  //   id: 'UA-12301-2'
+  // },
   /*
    ** Nuxt.js modules
    */

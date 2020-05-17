@@ -11,7 +11,7 @@
           <b-card-text class="mt-4 mt-lg-2 pr-lg-4">
             {{ course.brief_desc }}
           </b-card-text>
-          <b-button :to="{ path: `/courses/${course.id}` }" variant="yellow" class="text-white"
+          <b-button :to="{ path: `/courses/${course.slug}` }" variant="yellow" class="text-white"
             >see full course</b-button
           >
         </b-card-body>

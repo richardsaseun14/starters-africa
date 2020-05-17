@@ -21,7 +21,10 @@
                 {{ course.price == 0 ? 'free' : '&#8358;' + course.price }}
               </h3>
             </div>
-            <b-button size="lg" block class="text-white" variant="darker">register</b-button>
+            <!-- :to="{ path: `/courses/${course.slug}/register` }" -->
+            <b-button id="btn-register" @click="showModal" size="lg" block class="text-white" variant="darker"
+              >register</b-button
+            >
           </div>
         </div>
       </div>
@@ -175,15 +178,31 @@
         <alumni-slider></alumni-slider>
       </div>
     </div>
+
+    <course-modal :course="course"></course-modal>
   </div>
 </template>
 
 <script>
 import AlumniSlider from '~/components/AlumniSlider'
+import CourseModal from '~/components/CourseModal'
 import { mapState } from 'vuex'
 export default {
-  async asyncData({ app, params }) {
-    await app.store.dispatch('getCourse', params.id)
+  head() {
+    // Set Meta Tags for this Page
+    return {
+      title: `${this.course.title.rendered} - Starters Africa`,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        { hid: 'description', name: 'description', content: `${this.course.brief_desc}` }
+      ]
+    }
+  },
+  async asyncData({ app, params, $axios }) {
+    let tmp = await $axios.$get('/course?_fields=slug,id')
+    let found = tmp.find(tmp => tmp.slug == params.slug)
+
+    await app.store.dispatch('getCourse', found.id)
   },
 
   data() {
@@ -205,15 +224,22 @@ export default {
     })
   },
 
+  methods: {
+    showModal() {
+      this.$root.$emit('bv::show::modal', 'course-modal', '#btn-register')
+    }
+  },
+
   components: {
-    AlumniSlider
+    AlumniSlider,
+    CourseModal
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .course-img {
-  background-image: url('../../assets/img/course-image.png');
+  background-image: url('../../../assets/img/course-image.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

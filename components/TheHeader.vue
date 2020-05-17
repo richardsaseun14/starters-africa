@@ -60,20 +60,20 @@ export default {
         {
           id: 'facebook-nav',
           name: 'brands/facebook',
-          link: 'https://www.facebook.com',
+          link: 'https://www.facebook.com/startersafrica',
           tip: 'Facebook'
         },
-        { id: 'twitter-nav', name: 'brands/twitter', link: 'https://twitter.com/', tip: 'Twitter' },
+        { id: 'twitter-nav', name: 'brands/twitter', link: 'https://twitter.com/startersafrica', tip: 'Twitter' },
         {
           id: 'instagram-nav',
           name: 'brands/instagram',
-          link: 'https://www.instagram.com',
+          link: 'https://www.instagram.com/starters.africa/',
           tip: 'Instagram'
         },
         {
           id: 'linkedin-nav',
           name: 'brands/linkedin',
-          link: 'https://www.linkedin.com',
+          link: 'https://www.linkedin.com/company/starters-africa/',
           tip: 'LinkedIn'
         }
       ]

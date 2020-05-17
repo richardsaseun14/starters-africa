@@ -7,12 +7,12 @@ export default {
     title: 'Starters Africa | Dare to Start' || '',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      // {
+      //   hid: 'description',
+      //   name: 'description',
+      //   content: process.env.npm_package_description || ''
+      // }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }]
   },
@@ -39,9 +39,11 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: ['@nuxtjs/google-analytics'],
-  // googleAnalytics: {
-  //   id: 'UA-12301-2'
-  // },
+
+  // Analytics Object
+  googleAnalytics: {
+    id: 'UA-166797375-1'
+  },
   /*
    ** Nuxt.js modules
    */
@@ -90,8 +92,11 @@ export default {
       'TooltipPlugin',
       'FormRatingPlugin',
       'ListGroupPlugin',
-      'AvatarPlugin'
+      'AvatarPlugin',
+      'ModalPlugin',
+      'EmbedPlugin'
     ],
+
     directivePlugins: ['VBPopoverPlugin', 'VBTooltipPlugin', 'VBScrollspyPlugin'],
     bootstrapCSS: false, // Or `css: false`
     bootstrapVueCSS: false // Or `bvCSS: false`

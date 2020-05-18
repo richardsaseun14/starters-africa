@@ -135,6 +135,9 @@ export default {
 
 .swiper-wrapper {
   height: 80vh;
+  @media (max-width: 768px) {
+    height: 60vh;
+  }
 
   .swiper-slide {
     background: black;

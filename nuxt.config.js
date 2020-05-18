@@ -95,7 +95,8 @@ export default {
       'ListGroupPlugin',
       'AvatarPlugin',
       'ModalPlugin',
-      'EmbedPlugin'
+      'EmbedPlugin',
+      'FormTextareaPlugin'
     ],
 
     directivePlugins: ['VBPopoverPlugin', 'VBTooltipPlugin', 'VBScrollspyPlugin'],

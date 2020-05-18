@@ -1,4 +1,4 @@
-# starters-africa-nuxt
+# starters-africa
 
 > Starters Africa Website using Nuxt and WP-rest API
 

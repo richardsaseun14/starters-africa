@@ -22,8 +22,8 @@
 
       <b-navbar-toggle class="border-0" target="nav-collapse">
         <template v-slot:default="{ expanded }">
-          <img v-if="expanded" src="~/assets/svg/burger-black.svg" alt="burger menu" />
-          <img v-else src="~/assets/svg/burger.svg" alt="burger menu" />
+          <img height="14" v-if="expanded" src="~/assets/svg/close.svg" alt="burger menu" />
+          <img height="14" v-else src="~/assets/svg/burger-black.svg" alt="burger menu" />
         </template>
       </b-navbar-toggle>
 

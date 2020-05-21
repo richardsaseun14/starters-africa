@@ -40,7 +40,7 @@
           </div>
         </div>
 
-        <div class="col-md-5">
+        <div class="col-md-5 py-5">
           <icon name="phone-alt"></icon>
           <p class="">
             +234 818 045 2762

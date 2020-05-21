@@ -2,13 +2,17 @@
   <section>
     <div class="swiper py-4" v-swiper:homeSwiper="swiperOptions">
       <div class="swiper-wrapper my-auto">
-        <div class="swiper-slide d-flex flex-column text-center">
+        <div v-for="alumni in alumnis" class="swiper-slide d-flex flex-column text-center" :key="alumni.name">
           <div class="">
-            <b-avatar size="5rem" variant="primary" src="https://placekitten.com/300/300" class="mb-3"></b-avatar>
-            <p class="mb-0">Rex Charles</p>
+            <b-avatar
+              size="5rem"
+              variant="primary"
+              src="https://f1.pngfuel.com/png/386/684/972/face-icon-user-icon-design-user-profile-share-icon-avatar-black-and-white-silhouette-png-clip-art.png"
+              class="mb-3"
+            ></b-avatar>
+            <p class="mb-0">{{ alumni.name }}</p>
             <p class="font-weight-light mb-5 mt-3">
-              For a beginner like me this course is what I needed from the very basics to higher level the instructor
-              covers most the concepts which are enough to getting starting in Web Development.
+              {{ alumni.text }}
             </p>
           </div>
         </div>
@@ -71,7 +75,31 @@ export default {
             spaceBetween: 40
           }
         }
-      }
+      },
+      alumnis: [
+        {
+          text: `A very interesting and valuable experience. I learnt a lot and it gave me a good grounding in the basics.
+              It really made me think, and I liked how it enabled me to interact wiht people through the practical work.`,
+          name: 'Bisola Saseun'
+        },
+        {
+          text: ` I have really improved my knowledge in this field. It has also given me the confidence to start my own
+              small business in Digital Marketing.`,
+          name: 'Emem Isong'
+        },
+        {
+          text: `Thanks to the Starters Academy courses I’ve not only increased my knowledge on digital marketing but have
+              been able to secure a job.
+`,
+          name: 'Blessing Chuckson'
+        },
+        {
+          text: `This is the only platform where your tutors are very much interested in your personal growth and
+              development as well as your skills improvement.
+`,
+          name: 'Imodumeh Eshio John'
+        }
+      ]
     }
   }
 }

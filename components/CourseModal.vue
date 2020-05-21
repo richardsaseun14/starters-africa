@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-modal button-size="sm" hide-footer body-class="pt-0" centered size="lg" id="course-modal">
+    <b-modal scrollable="" button-size="sm" hide-footer body-class="pt-0" centered size="lg" id="course-modal">
       <template v-slot:modal-title>
         <h5>Course Registration Form</h5>
       </template>

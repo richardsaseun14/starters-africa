@@ -23,7 +23,7 @@
             </div>
             <!-- :to="{ path: `/courses/${course.slug}/register` }" -->
             <b-button id="btn-register" @click="showModal" size="lg" block class="text-white" variant="darker"
-              >register</b-button
+              >register now</b-button
             >
           </div>
         </div>
@@ -43,7 +43,12 @@
         <div class="col-12 d-flex flex-wrap">
           <!-- instructor -->
           <div class="d-flex mr-3 my-3 my-lg-0">
-            <b-avatar size="2.5rem" variant="primary" src="https://placekitten.com/300/300" class="mr-2"></b-avatar>
+            <b-avatar
+              size="2.5rem"
+              variant="primary"
+              src="https://f1.pngfuel.com/png/386/684/972/face-icon-user-icon-design-user-profile-share-icon-avatar-black-and-white-silhouette-png-clip-art.png"
+              class="mr-2"
+            ></b-avatar>
             <div class="mt-n1">
               <small class="text-muted text-capitalize">instructor</small>
               <p class="mb-0 mt-n1 text-uppercase">{{ course.instructor[0].post_title }}</p>
@@ -56,7 +61,7 @@
             ></b-avatar>
             <div class="mt-n1">
               <small class="text-muted text-capitalize">category</small>
-              <p class="mb-0 mt-n1 text-uppercase">{{ course.category }}</p>
+              <p class="mb-0 mt-n1 text-uppercase">{{ category }}</p>
             </div>
           </div>
           <!-- category -->
@@ -86,15 +91,13 @@
     <div class="container mt-6">
       <b-nav pills align="center">
         <b-nav-form>
-          <b-button @click.prevent="show = !show" class="px-3 text-white" variant="primary" type="submit"
-            >Overview</b-button
-          >
+          <b-button class="px-8 text-white" variant="primary" type="submit">Overview</b-button>
         </b-nav-form>
-        <b-nav-form class="mx-2">
+        <!-- <b-nav-form class="mx-2">
           <b-button @click.prevent="show = !show" class="px-3 text-white" variant="primary" type="submit"
             >Curriculum</b-button
           >
-        </b-nav-form>
+        </b-nav-form> -->
         <!-- <b-nav-form>
           <b-button size="sm" class="px-3 text-white" variant="primary" type="submit">Resources</b-button>
         </b-nav-form> -->
@@ -103,7 +106,7 @@
     <!-- Nav objects -->
     <div class="container">
       <!-- Course Overview -->
-      <div v-if="show" class="row mt-5">
+      <div class="row mt-5">
         <div class="col-12">
           <h3 class="mb-3">Description</h3>
           <span v-html="course.content.rendered" class=""></span>
@@ -122,9 +125,8 @@
         </div>
       </div>
       <!-- Curriculum -->
-      <div v-else class="row mt-5">
+      <!-- <div v-else class="row mt-5">
         <div class="col-12">
-          <!-- html -->
           <b-list-group class="mb-4">
             <b-list-group-item class="border-0 pb-3 pl-0 text-uppercase"
               ><icon name="regular/file-alt"></icon> &nbsp; HTML</b-list-group-item
@@ -143,7 +145,6 @@
             <b-list-group-item class="border-0 text-capitalize py-1 pl-0">Comments and Colors </b-list-group-item>
           </b-list-group>
 
-          <!-- css -->
           <b-list-group class="mb-4">
             <b-list-group-item class="border-0 pb-3 pl-0 text-uppercase"
               ><icon name="regular/file-alt"></icon> &nbsp; CSS</b-list-group-item
@@ -156,7 +157,6 @@
             <b-list-group-item class="border-0 text-capitalize py-1 pl-0">Border & Margins & Padding</b-list-group-item>
           </b-list-group>
 
-          <!-- javascript -->
           <b-list-group class="mb-4">
             <b-list-group-item class="border-0 pb-3 pl-0 text-uppercase"
               ><icon name="regular/file-alt"></icon> &nbsp; Javascript</b-list-group-item
@@ -169,10 +169,10 @@
             <b-list-group-item class="border-0 text-capitalize py-1 pl-0">Statements</b-list-group-item>
           </b-list-group>
         </div>
-      </div>
+      </div> -->
     </div>
 
-    <div class="bg-darker-25 mt-5 py-5">
+    <div class="bg-darker-25 mt-5 py-6">
       <div class="container">
         <h1 class="text-center">Testimonies From Our Student</h1>
         <alumni-slider></alumni-slider>
@@ -203,6 +203,10 @@ export default {
     let found = tmp.find(tmp => tmp.slug == params.slug)
 
     await app.store.dispatch('getCourse', found.id)
+
+    const [resp] = await $axios.$get(`/course_category?post=${found.id}&_fields=name`)
+    return { category: resp.name }
+    // console.log(name)
   },
 
   data() {

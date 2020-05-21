@@ -74,14 +74,12 @@ export default {
 
   methods: {
     async submitForm() {
-      const formData = new FormData()
-      formData.append('your-name', form.name)
-      formData.append('your-email', form.email)
-      formData.append('your-subject', form.subject)
-      formData.append('your-message', form.message)
-
+      // const formData = new FormData()
+      // formData.append('your-name', form.name)
+      // formData.append('your-email', form.email)
+      // formData.append('your-subject', form.subject)
+      // formData.append('your-message', form.message)
       // console.log(formData)
-
       // this.$axios.setBaseURL('wp.starters.africa/wp-json')
       // const resp = await this.$axios.$post('/contact-form-7/v1/contact-forms/48/feedback', formData)
       // console.log(r  esp)

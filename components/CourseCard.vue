@@ -37,7 +37,7 @@ export default {
   async created() {
     const img = await this.$axios.$get(`/media/${this.course.featured_media}?_fields=media_details`)
     const [resp] = await this.$axios.$get(`/course_category?post=${this.course.id}&_fields=name`)
-    console.log('image', img)
+    // console.log('image', img)
     this.img = img.media_details.sizes.medium.source_url
     this.category = resp.name
   }

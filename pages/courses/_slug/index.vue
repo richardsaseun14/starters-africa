@@ -46,7 +46,7 @@
             <b-avatar
               size="2.5rem"
               variant="primary"
-              src="https://f1.pngfuel.com/png/386/684/972/face-icon-user-icon-design-user-profile-share-icon-avatar-black-and-white-silhouette-png-clip-art.png"
+              src="https://f1.pngfuel.com/png/386/684/972/face-icon-user-icon-design-user-profile-share-icon-avatar-black-and-white-silhouette-png-clip-art.pngP"
               class="mr-2"
             ></b-avatar>
             <div class="mt-n1">

@@ -31,7 +31,7 @@ export default {
 
   methods: {
     resizeFrame(obj) {
-      console.log(obj)
+      // console.log(obj)
       // obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px'
     }
   }

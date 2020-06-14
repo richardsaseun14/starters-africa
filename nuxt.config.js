@@ -23,8 +23,7 @@ export default {
     link: [{ rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png?v=oLJrmap688' }],
     link: [{ rel: 'mask-icon', color: '#5bbad5', href: '/safari-pinned-tab.svg?v=oLJrmap688' }],
     link: [{ rel: 'shortcut icon', href: '/favicon.ico?v=oLJrmap688' }],
-    link: [{ rel: 'manifest', href: '/site.webmanifest?v=oLJrmap688' }],
-    link: [{ rel: 'shortcut icon', href: '/favicon.ico?v=oLJrmap688' }]
+    link: [{ rel: 'manifest', href: '/site.webmanifest?v=oLJrmap688' }]
   },
   /*
    ** Customize the progress-bar color

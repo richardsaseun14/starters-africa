@@ -4,7 +4,15 @@
 
 export const state = () => ({
   course: {},
-  courses: []
+  courses: [],
+  form: {
+    email: '',
+    fullName: '',
+    companyName: '',
+    phoneNumber: '',
+    jobTitle: '',
+    message: ''
+  }
 })
 
 export const mutations = {

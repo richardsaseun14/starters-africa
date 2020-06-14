@@ -4,15 +4,10 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 py-7 py-md-10 pl-md-5">
-            <h1 class="">
-              <span class="text-yellow">Upskill</span> your people with virtual
-              training
-            </h1>
+            <h1 class="">Let’s become your <span class="text-yellow">strategic growth</span> partner</h1>
             <p>
-              Empower your remote workforce to learn what they need, when they
-              need it. Online learning from global experts across tech,
-              business, wellness and more to help your employees do whatever
-              comes next.
+              We are the partners you need to help impact growth to your business from Strategy stage to execution, we
+              follow you through your journey of growth and development.
             </p>
             <!-- request demo form -->
             <b-form inline>
@@ -24,9 +19,7 @@
                 placeholder="Email Address"
               ></b-input>
 
-              <b-button class="px-3 text-white" variant="primary"
-                >request demo</b-button
-              >
+              <b-button @click="request" class="px-3 text-white" variant="primary">request demo</b-button>
             </b-form>
           </div>
           <div class="col-md-6 business-hero"></div>
@@ -37,7 +30,28 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    // Set Meta Tags for this Page
+    return {
+      title: `Starters for Business - Starters Africa`,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: `We are the partners you need to help impact growth to your business from Strategy stage to execution, we
+              follow you through your journey of growth and development.`
+        }
+      ]
+    }
+  },
+  methods: {
+    request() {
+      this.$router.push('/request-demo')
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

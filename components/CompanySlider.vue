@@ -5,21 +5,18 @@
       <div class="swiper-wrapper">
         <div class="py-5 swiper-slide slide-1 d-flex flex-column text-center">
           <div class="">
-            company logo
+            <b-img height="70" src="~/assets/svg/norbert.svg" alt=""></b-img>
           </div>
         </div>
         <div class="py-5 swiper-slide slide-1 d-flex flex-column text-center">
           <div class="">
-            company logo
+            <b-img height="50" src="~/assets/svg/prodevs.svg" alt=""></b-img>
           </div>
         </div>
       </div>
       <!-- <div class="swiper-button-prev" slot="button-prev"></div>
       <div class="swiper-button-next" slot="button-next"></div> -->
-      <div
-        class="swiper-pagination swiper-pagination-bullets pb-0"
-        slot="pagination"
-      ></div>
+      <div class="swiper-pagination swiper-pagination-bullets pb-0" slot="pagination"></div>
     </div>
   </section>
 </template>
@@ -34,21 +31,28 @@ export default {
   data() {
     return {
       swiperOptions: {
-        slidesPerView: 4,
+        slidesPerView: 2,
         spaceBetween: 30,
         loop: true,
-        // autoplay: {
-        //   delay: 4000,
-        //   disableOnInteraction: true
-        // },
-        pagination: {
-          el: '.swiper-pagination',
-          // dynamicBullets: true,
-          clickable: true
+        autoplay: {
+          delay: 4000
+          // disableOnInteraction: true
         },
+        // pagination: {
+        //   el: '.swiper-pagination',
+        //   // dynamicBullets: true,
+        //   clickable: true
+        // },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 20
+          }
         }
       }
     }

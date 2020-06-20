@@ -47,7 +47,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxtjs/google-analytics'],
+  buildModules: ['@nuxtjs/google-analytics', '@nuxtjs/moment'],
 
   // Analytics Object
   googleAnalytics: {
@@ -63,7 +63,9 @@ export default {
     '@nuxtjs/axios',
     // '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    // for sharing links
+    'vue-social-sharing/nuxt'
   ],
   /*
    ** Axios module configuration
@@ -104,7 +106,8 @@ export default {
       'AvatarPlugin',
       'ModalPlugin',
       'EmbedPlugin',
-      'FormTextareaPlugin'
+      'FormTextareaPlugin',
+      'BadgePlugin'
     ],
 
     directivePlugins: ['VBPopoverPlugin', 'VBTooltipPlugin', 'VBScrollspyPlugin'],

@@ -1,9 +1,9 @@
 <template>
   <div>
     <section>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
-          <div class="col-md-6 py-7 py-md-10 pl-md-5">
+          <div class="col-md-6 py-7 py-md-10 pr-md-5">
             <h1 class="">Let’s become your <span class="text-yellow">strategic growth</span> partner</h1>
             <p>
               We are the partners you need to help impact growth to your business from Strategy stage to execution, we

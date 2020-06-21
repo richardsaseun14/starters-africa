@@ -21,6 +21,7 @@
     "swiper": "^5.3.8",
     "vue-awesome": "^4.0.2",
     "vue-awesome-swiper": "^4.1.1",
+    "vue-disqus": "^4.0.0",
     "vue-social-sharing": "^3.0.0-beta.11",
     "vue-tawk": "^1.0.1",
     "vuex-persist": "^2.2.0",

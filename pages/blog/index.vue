@@ -1,11 +1,11 @@
 <template>
   <section class="">
-    <div class="container-fluid bg-darker-25 py-3">
+    <div class="bg-darker-25 py-3">
       <div class="container"><h3 class="text-darker">BLOG</h3></div>
     </div>
     <div class="container mt-5">
       <div class="row">
-        <div v-for="post in posts" class="col-12" :key="post.id">
+        <div v-for="post in posts" class="col-md-6" :key="post.id">
           <blog-item :blog="post"></blog-item>
         </div>
       </div>

@@ -17,7 +17,7 @@
     </b-navbar>
 
     <!-- Main navigation -->
-    <b-navbar class="border-bottom" toggleable="lg" type="light">
+    <b-navbar class="border-bottom" toggleable="md" type="light">
       <div class="container">
         <b-navbar-brand to="/">
           <b-img height="30" src="~/assets/img/logo.png" alt="Starters Africa Logo"></b-img>
@@ -37,7 +37,7 @@
               v-for="link in links"
               link-classes="link-up"
               exact-active-class="exact-active"
-              class="ml-4 font-weight-bold text-uppercase"
+              class="ml-md-4 font-weight-bold text-uppercase"
               :to="link.link"
               :key="link.text"
             >

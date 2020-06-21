@@ -39,10 +39,11 @@ export default {
   plugins: [
     { src: '@/plugins/nuxt-swiper.plugin', mode: 'client' },
     { src: '@/plugins/localStorage.js', ssr: false },
+    { src: '@/plugins/chatbot.plugin', mode: 'client' },
+    { src: '@/plugins/disqus.plugin' },
     {
       src: '@/plugins/iconify.js'
-    },
-    { src: '@/plugins/chatbot.plugin', mode: 'client' }
+    }
   ],
   /*
    ** Nuxt.js dev-modules
@@ -107,7 +108,8 @@ export default {
       'ModalPlugin',
       'EmbedPlugin',
       'FormTextareaPlugin',
-      'BadgePlugin'
+      'BadgePlugin',
+      'ButtonGroupPlugin'
     ],
 
     directivePlugins: ['VBPopoverPlugin', 'VBTooltipPlugin', 'VBScrollspyPlugin'],

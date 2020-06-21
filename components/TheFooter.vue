@@ -8,11 +8,11 @@
             <b-nav-text class="mb-3 pl-3 pl-lg-0">
               <b-img height="50" src="~/assets/img/logo-white.png" alt="Starters Africa Logo"></b-img>
             </b-nav-text>
-            <b-nav-item target="_blank" href="tel:+2348180452762" class="mb-3 pl-3 pl-lg-0">
+            <b-nav-item target="_blank" href="tel:+2348180452762" class="mb-3 pl-0" link-classes="pl-0">
               <icon class="mr-3" scale="1.3" name="phone-alt"></icon>
               +234 818 045 2762
             </b-nav-item>
-            <b-nav-item target="_blank" href="mailto:info@starters.africa" class="mb-3 pl-3 pl-lg-0">
+            <b-nav-item target="_blank" href="mailto:info@starters.africa" class="mb-3 pl-0" link-classes="pl-0">
               <icon class="mr-3" scale="1.3" name="envelope"></icon>
               info@starters.africa
             </b-nav-item>
